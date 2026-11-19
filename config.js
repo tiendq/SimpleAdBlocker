@@ -1,6 +1,7 @@
 const tuoitre = 'tuoitre.vn';
 const theguardian = 'theguardian.com';
 const oxford = 'oxfordlearnersdictionaries.com';
+const shopee = 'shopee.vn';
 
 const SITE_RULES = {
   [tuoitre]: [
@@ -22,6 +23,12 @@ const SITE_RULES = {
     '#harzsgqwhvvy7y0qs73n73tzs3y0e',
     '#harzsgqwhvvy7y0m3jtzs3',
     '#ring-links-box'
+  ],
+  [shopee]: [
+    '#HomePageCarouselBannerSection',
+    '#HomePageSquareBannerSection',
+    '#HomePageFloatingBannerSection'
+    // 'footer' // Issue: remove it (with huge garbage at the end of page) results in a blank page, requires a refresh all pages
   ]
 };
 
@@ -41,5 +48,5 @@ const AD_SERVERS = [
   'deqik.com',
   'mediacdn.vn',
   'js.aiservice.vn',
-  'sohatv.vn',
+  'sohatv.vn'
 ];

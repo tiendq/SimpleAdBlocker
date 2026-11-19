@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Simple Ad Blocker",
-  "version": "1.7",
+  "version": "1.13",
   "description": "Simple extension to quickly removes ads on specific websites, and reduces some from others.",
   "author": "Tien Do",
   "homepage_url": "https://github.com/tiendq",
