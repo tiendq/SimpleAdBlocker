@@ -1,5 +1,6 @@
 const tuoitre = 'tuoitre.vn';
 const theguardian = 'theguardian.com';
+const oxford = 'oxfordlearnersdictionaries.com';
 
 const SITE_RULES = {
   [tuoitre]: [
@@ -13,9 +14,14 @@ const SITE_RULES = {
     '.detail__newslette'
   ],
   [theguardian]: [
-    '.stubborn-banner',
-    '#sticky-promo',
-    'div[data-testid="sponsored-card"]'
+    '.top-fronts-banner-ad-container', // home
+    '[aria-label="newsletter promotion"]' // article
+  ],
+  [oxford]: [
+    '#harzsgqwhvvy7y03s1tzs3',
+    '#harzsgqwhvvy7y0qs73n73tzs3y0e',
+    '#harzsgqwhvvy7y0m3jtzs3',
+    '#ring-links-box'
   ]
 };
 
@@ -26,14 +32,14 @@ const AD_SERVERS = [
   'googlesyndication.com',
   'googleadservices.com',
   'adnxs.com',
-  'taboola.com',
-  'outbrain.com',
-  'admicro.vn',
+  'google-analytics.com',
+  'googletagmanager.com',
+  'hotjar.com',
+  'admicro.vn', // tuoitre
   'quangcao.tuoitre.vn',
   'amcdn.vn',
-  'googletagmanager.com',
   'deqik.com',
   'mediacdn.vn',
   'js.aiservice.vn',
-  'sohatv.vn'
+  'sohatv.vn',
 ];
