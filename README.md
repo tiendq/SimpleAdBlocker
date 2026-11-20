@@ -1,6 +1,6 @@
-# SimpleAdBlocker
+# Simple Ads Blocker
 
-Simple ad blocker extension for Chrome.
+Simple extension to quickly remove ads on specific websites, and reduce some from others.
 
 ## Load and Test in Chrome
 
@@ -15,3 +15,7 @@ Simple ad blocker extension for Chrome.
 ## Reload the Extension
 
 Click the `Reload` (circular arrow) icon on your extension card.
+
+## References
+
+[Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest)
