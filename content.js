@@ -27,7 +27,7 @@ if (matchedDomain) {
   (document.head || document.documentElement).appendChild(style);
 
   const removeAds = (root = document) => {
-    console.info('Simple Ad Blocker working')
+    // console.info('Simple Ad Blocker working')
     root.querySelectorAll(combinedSelector).forEach((el) => el.remove());
   };
 

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Simple Ads Blocker",
-  "version": "1.13",
+  "version": "1.15",
   "description": "Simple extension to quickly remove ads on specific websites, and reduce some from others.",
   "icons": {
     "128": "cow.png"

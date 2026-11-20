@@ -19,3 +19,7 @@ Click the `Reload` (circular arrow) icon on your extension card.
 ## References
 
 [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest)
+
+
+
+Tien Do @ [bigfootsaigon.com](https://bigfootsaigon.com)

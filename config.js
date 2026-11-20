@@ -2,6 +2,8 @@ const tuoitre = 'tuoitre.vn';
 const theguardian = 'theguardian.com';
 const oxford = 'oxfordlearnersdictionaries.com';
 const shopee = 'shopee.vn';
+const reddit = 'reddit.com';
+const facebook = 'facebook.com';
 
 const SITE_RULES = {
   [tuoitre]: [
@@ -29,6 +31,12 @@ const SITE_RULES = {
     '#HomePageSquareBannerSection',
     '#HomePageFloatingBannerSection'
     // 'footer' // Issue: remove it (with huge garbage at the end of page) results in a blank page, requires a refresh all pages
+  ],
+  [reddit]: [
+    'shreddit-ad-post' // .promotedlink
+  ],
+  [facebook]: [
+    '#right_rail_container' // right ads sidebar
   ]
 };
 
@@ -50,3 +58,19 @@ const AD_SERVERS = [
   'js.aiservice.vn',
   'sohatv.vn'
 ];
+
+/*
+function testfb() {
+  const feedContainer = Array.from(document.querySelectorAll('h3')).find(element => element.textContent.toLowerCase().includes('feed posts'));
+  const emptyDiv = feedContainer.nextElementSibling;
+  const postsContainer = emptyDiv.nextElementSibling;
+  const posts = Array.from(postsContainer.children);
+
+  const ads = posts.filter(element => {
+    const adsLinks = element.querySelectorAll('a[href^="/ads/about"]');
+    return adsLinks.length > 0; // only found ad if node has been expanded manually, dynamic content
+  });
+
+  return ads;
+}
+*/
